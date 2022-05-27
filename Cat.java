@@ -1,6 +1,7 @@
 package Animals.com;
 import Animals.com.Animal;
 import Animals.com.Dog;
+import Animals.com.AnimalSwitcher;
 
 public class Cat extends Animal {
     @Override
@@ -10,9 +11,7 @@ public class Cat extends Animal {
     public static void main(String[] args) {
         Dog dog = new Dog();
         Cat cat = new Cat();
-        cat.run();
-        cat.makeSound();
-        dog.run();
-        dog.makeSound();
+        AnimalSwitcher.sounds(dog);
+        AnimalSwitcher.sounds(cat);
     }
 }
